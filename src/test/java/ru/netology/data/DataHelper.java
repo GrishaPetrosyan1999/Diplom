@@ -138,11 +138,11 @@ public class DataHelper {
     }
 
     public static CardInfo getCardHolder1Word() {
-        Faker faker = new Faker();
-        String holder = faker.name().firstName();
-        String month = getShiftedMonth(1);
-        String year = getShiftedYear(1);
-        String cvv = faker.number().digits(3);
+        var faker = new Faker();
+        var holder = faker.name().firstName();
+        var month = getShiftedMonth(1);
+        var year = getShiftedYear(1);
+        var cvv = faker.number().digits(3);
         return new CardInfo("4444444444444441", month, year, holder, cvv);
     }
 
