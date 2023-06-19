@@ -13,11 +13,11 @@ public class DataHelper {
     }
 
     public static CardInfo getApprovedCard() {
-        return new CardInfo("4444444444444441", "08", "23", "Grisha Petrosyan", "888");
+        return new CardInfo("4444444444444441", getShiftedMonth(2), getShiftedYear(0), "Grisha Petrosyan", "888");
     }
 
     public static CardInfo getDeclinedCard() {
-        return new CardInfo("4444444444444442", "09", "24", "Grisha Petrosyan", "777");
+        return new CardInfo("4444444444444442", getShiftedMonth(3), getShiftedYear(1), "Grisha Petrosyan", "777");
     }
 
     public static CardInfo getEmptyCard() {
